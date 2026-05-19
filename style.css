@@ -44,6 +44,7 @@ a {
   color: var(--white);
   position: relative;
   overflow: hidden;
+  transition: background 0.35s ease;
 }
 
 .site-header::before {
@@ -214,7 +215,7 @@ a {
 }
 .hero h1 .title-line {
   color: var(--white);
-  margin-top: 20px;
+  margin-top: clamp(14px, 2vw, 24px);
   -webkit-text-stroke: 0;
 }
 .hero-subtitle {
@@ -560,7 +561,17 @@ footer a {
   }
   .hero {
     padding-top: 25px;
+    padding-bottom: 125px;
     text-align: center;
+    min-height: auto;
+  }
+  .hero h1 {
+    font-size: clamp(46px, 12vw, 82px);
+    line-height: 0.92;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+  }
+  .hero h1 .title-line {
+    margin-top: 18px;
   }
   .hero-actions {
     justify-content: center;
@@ -571,6 +582,9 @@ footer a {
 }
 
 @media (max-width: 560px) {
+  .navbar {
+    padding: 14px 16px;
+  }
   .brand strong {
     font-size: 22px;
   }
@@ -579,11 +593,44 @@ footer a {
   }
   .hero {
     min-height: auto;
-    padding-bottom: 115px;
+    padding: 20px 16px 95px;
+    gap: 24px;
+  }
+  .blessing {
+    font-size: 18px;
+  }
+  .eyebrow {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .hero h1 {
+    font-size: clamp(40px, 15vw, 62px);
+    line-height: 0.98;
+    letter-spacing: -0.5px;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.32);
+  }
+  .hero h1 .title-line {
+    margin-top: 14px;
+  }
+  .hero-subtitle {
+    font-size: 16px;
+    line-height: 1.55;
+    margin-inline: auto;
+  }
+  .btn {
+    width: 100%;
+    padding: 13px 18px;
   }
   .admission-card {
     min-height: 340px;
     padding: 24px;
+    transform: none;
+  }
+  .admission-card strong {
+    font-size: 52px;
+  }
+  .admission-card span {
+    font-size: 20px;
   }
   .student-avatar {
     width: 120px;
@@ -600,5 +647,19 @@ footer a {
   }
   section {
     padding: 54px 16px;
+  }
+  .contact-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .phone {
+    font-size: 24px;
+  }
+}
+
+@media (hover: none) {
+  .site-header {
+    --mouse-x: 50%;
+    --mouse-y: 25%;
   }
 }
