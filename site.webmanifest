@@ -1,0 +1,12 @@
+{
+  "name": "बेल्हेकर कोचिंग क्लासेस",
+  "short_name": "Belhekar Classes",
+  "description": "संगमनेर येथील १ ली ते १० वी, ICSE/CBSE, स्कॉलरशिप व नवोदय कोचिंग क्लासेस.",
+  "start_url": "/belhekar/",
+  "display": "standalone",
+  "background_color": "#fff8d9",
+  "theme_color": "#ed1c24",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

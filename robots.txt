@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dhananjay431.github.io/belhekar/sitemap.xml
